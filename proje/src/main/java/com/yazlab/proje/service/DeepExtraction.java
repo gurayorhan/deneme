@@ -25,7 +25,7 @@ public class DeepExtraction {
     @Autowired
     private SimilarityService similarityService;
 
-    public Deep t(StepFourDto stepFourDto) throws IOException {
+    public Deep deepSimilarity(StepFourDto stepFourDto) throws IOException {
         Deep deep = new Deep();
         deep.setUrl(stepFourDto.getUrl());
         List<Keyword> keywords = keywordService.keywordExtraction(stepFourDto.getUrl());

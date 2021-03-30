@@ -70,6 +70,7 @@ public class FrequencyService {
                 }
             }
         }
+
         List<Frequency> frequencies = new ArrayList<>();
         for (String s:list) {
             frequencies.add(new Frequency(s,wordCountMap.get(s), (wordCountMap.get(s)*1.0)/list.size()));
